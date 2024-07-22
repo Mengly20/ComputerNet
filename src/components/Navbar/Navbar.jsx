@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="container flex justify-between items-center">
             <div>
                 <a href="#" className="font-bold text-2xl sm: text-3xl flex gap-2 ">
-                    <img src={Logo} alt="Logo" className='w-10 uppercase' />
+                    <img src={Logo} alt="Logo" className='w-[60px] h-[60px]' />
                     computernet
                 </a>
             </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
                    
                    type="text" 
                    placeholder="search " 
-                   className=" bg-bgsearch w-[200px] sw:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary " /> 
+                   className=" bg-bgsearch w-[200px] sw:w-[200px] group-hover:w-[250px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary " /> 
                     <IoMdSearch className="text-gray-500 group-hover:text-primary  absolute top-1/2 -translate-y-1/2 right-3 "  />
                 </div>
               {/* Button order */}

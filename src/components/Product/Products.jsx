@@ -87,16 +87,21 @@ const Products = () => {
       <div className="container">
         {/* Header section */}
       <div className="text-center mb-10 max-w-[600px] mx-auto">
-            <p className="text-sm text-orange-300">Top Selling Products </p>
-            <h1 className="text-3xl font-bold ">Products</h1>
-            <p className="text-xs text-gray-500">Hurry Up all you guys!!</p>
+            <p data-aos="fade-up"  className="text-sm text-orange-300">Top Selling Products </p>
+            <h1 data-aos="fade-up" className="text-3xl font-bold ">Products</h1>
+            <p data-aos="fade-up" className="text-xs text-gray-500">Hurry Up all you guys!!</p>
       </div>
       {/* Body section */}
         <div>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-4 place-items-center gap-5 flex-auto">
                 {/* card section */}
                 {ProductsData.map((data)=>(
-                    <div>
+                    <div 
+                    data-aos="fade-up"
+                    
+                    data-aos-delay={data.aosDelay}
+                    key={data.id} 
+                    className="space-y-3" >
                         <div>
                         <img src={data.img} alt=""
                         className="h-[250px] w-[600px] object-cover rounded-md "
@@ -105,6 +110,11 @@ const Products = () => {
                         
                         <div>
                             <h3 className="font-semibold mt-50% mb-12%">{data.title}</h3>
+                            <p className="text-sm text-gray-600" >{data.color}</p>
+                            <div className="flex items-center gap-2">
+                              <FaStar className="text-yellow-400" />
+                              <span>{data.rating}</span>
+                            </div>
                         </div>
                     </div>
                     
