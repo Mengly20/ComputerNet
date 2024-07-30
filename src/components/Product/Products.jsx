@@ -14,65 +14,73 @@ const ProductsData = [
     {
       id: 1,
       img: Img1,
-      title: "Asus ProArt",
-      rating: 5.0,
-      color: "white",
+      title: "Macbook M2",
+      rating: 4.8,
+      color: "black",
+      price: "$1499",
       aosDelay: "0",
     },
     {
       id: 2,
       img: Img2,
-      title: "Women western",
+      title: "Macbook M2",
       rating: 4.5,
-      color: "Red",
+      color: "gray",
+      price: "$1499",
       aosDelay: "200",
     },
     {
       id: 3,
       img: Img3,
-      title: "Goggles",
+      title: "Macbook M1",
       rating: 4.7,
-      color: "brown",
+      color: "gray",
+      price: "$1299",
       aosDelay: "400",
     },
     {
       id: 4,
       img: Img4,
-      title: "Printed T-Shirt",
+      title: "MSI Katana 15",
       rating: 4.4,
-      color: "Yellow",
+      color: "black",
+      price: "$1200",
       aosDelay: "600",
     },
     {
       id: 5,
       img: Img5,
-      title: "Fashin T-Shirt",
+      title: "MSI prestige 15",
       rating: 4.5,
-      color: "Pink",
+      color: "black",
+      price: "$1550",
       aosDelay: "800",
     },
     {
       id: 6,
       img: Img6,
-      title: "Fashin T-Shirt",
+      title: "Dell XSP",
       rating: 4.5,
-      color: "Pink",
+      color: "gray",
+      price: "$1200",
       aosDelay: "800",
     },
     {
       id: 7,
       img: Img7,
-      title: "Fashin T-Shirt",
+      title: "Dell 14.6 FCES",
       rating: 4.5,
-      color: "Pink",
+      color: "gray",
+      price: "$1300",
       aosDelay: "800",
     },
     {
       id: 8,
       img: Img8,
-      title: "Fashin T-Shirt",
+      title: "Macbook M3",
       rating: 4.5,
       color: "Pink",
+      price: "$1899",
       aosDelay: "800",
     },
     
@@ -104,13 +112,14 @@ const Products = () => {
                     className="space-y-3" >
                         <div>
                         <img src={data.img} alt=""
-                        className="h-[250px] w-[600px] object-cover rounded-md "
+                        className="h-[350px] w-[600px] object-cover rounded-md "
                         />
                         </div>
                         
                         <div>
                             <h3 className="font-semibold mt-50% mb-12%">{data.title}</h3>
                             <p className="text-sm text-gray-600" >{data.color}</p>
+                            <p className="text-sm text-gray-600" >{data.price}</p>
                             <div className="flex items-center gap-2">
                               <FaStar className="text-yellow-400" />
                               <span>{data.rating}</span>
