@@ -2,8 +2,6 @@ import React from 'react';
 import Logo from "../../assets/logo.png";
 import { IoMdSearch } from "react-icons/io";
 import {FaCartShopping} from "react-icons/fa6";
-
-
 const Menu =[
   {
     id: 1,
@@ -26,7 +24,6 @@ const Menu =[
     link:"/Brand"
   }
 ];
-
 const Navbar = () => {
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
@@ -86,8 +83,6 @@ const Navbar = () => {
                   > {data.name} </a>
                  </li>
                 ))}
-               
-                
             </ul>
       </div>
     </div>

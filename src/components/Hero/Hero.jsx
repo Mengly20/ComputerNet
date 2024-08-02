@@ -31,7 +31,6 @@ const ImageList=[{
 },
 
 ]
-
 const Hero = () => {
  
     var settings ={
@@ -44,11 +43,7 @@ const Hero = () => {
         cssEase: "ease-in-out",
         pauseOnHover: false,
         pauseOnFocus:true,
-        
-
     };
-
-
   return (
     <div className="relative overflow-hidden min-h-[550px] sm:min-h-[700px] bg-gray-50 flex justify-center items-center duration-200">
         {/* background pattern*/}

@@ -29,10 +29,7 @@ const ProductsData=[
         title:"Dell XSP",
         description:"$1200"
     }
-   
-
 ]
-
 const TopProducts = () => {
   return (
     <div>
@@ -66,7 +63,6 @@ const TopProducts = () => {
                         <FaStar className="text-yellow-500"/>
                         <FaStar className="text-yellow-500"/>
                         <FaStar className="text-yellow-500"/>
-                       
                         </div>
                         <h1
                         className="text-xl font-bold group-hover:text-white"
@@ -88,5 +84,4 @@ const TopProducts = () => {
     </div>
   )
 }
-
 export default TopProducts
