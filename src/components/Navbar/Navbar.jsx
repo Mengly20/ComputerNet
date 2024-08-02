@@ -80,11 +80,11 @@ const Navbar = () => {
             <ul className="flex">
               {
                 Menu.map((data)=>(
-                 <li>
+                 <li className="flex">
                   <a href={data.link} 
-                  className="inline-block px-20 hover:text-secondary  duration-200 py-2" 
+                  className="inline-block px-16 hover:text-secondary  duration-200 py-2" 
                   > {data.name} </a>
-                 </li> 
+                 </li>
                 ))}
                
                 

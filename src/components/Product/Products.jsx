@@ -9,6 +9,7 @@ import Img6 from "../../assets/top_sale/computer6.png"
 import Img7 from "../../assets/top_sale/computer7.png"
 import Img8 from "../../assets/top_sale/computer8.png"
 import { FaStar } from 'react-icons/fa6'
+import Footer from '../Footer/Footer'
 
 const ProductsData = [
     {
@@ -134,7 +135,8 @@ const Products = () => {
       </div>
       </div>
 
-
+      {/* Footer */}
+      <Footer/>
     </div>
   )
 }

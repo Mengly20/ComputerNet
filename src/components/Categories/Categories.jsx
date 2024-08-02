@@ -18,6 +18,7 @@ import Imgcase3 from '../../assets/case/case3.png'
 import Imgcase4 from '../../assets/case/case4.png'
 
 import {FaStar} from "react-icons/fa"
+import Footer from '../Footer/Footer'
 
 const ProductsData=[
     {
@@ -275,6 +276,8 @@ const Categories = () => {
       <div className="py-5">
       </div>
     </div>
+    {/* Footer */}
+    <Footer/>
     </div>
   )
 }

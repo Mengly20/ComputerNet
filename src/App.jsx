@@ -3,6 +3,7 @@ import Home from './components/Home'
 import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Products from './components/Product/Products'
 import Categories from './components/Categories/Categories'
+import Brand from './components/Brand/Brand'
 import AOS from 'aos'
 import "aos/dist/aos.css"
 const App = () => {
@@ -25,6 +26,7 @@ React.useEffect(()=>{
       <a href="/Home"></a>
       <a href="/Product"></a>
       <a href="/Categorise"></a>
+      <a href="/Brand"></a>
      
 
        {/* Create Router */}
@@ -34,6 +36,7 @@ React.useEffect(()=>{
         <Route  path="/Home" element={<Home/>}/>
         <Route  path="/Product" element={<Products/>}/>
         <Route  path="/Categorise" element={<Categories/>} />
+        <Route  path="/Brand" element={<Brand/>}/>
 
       </Routes>
        
